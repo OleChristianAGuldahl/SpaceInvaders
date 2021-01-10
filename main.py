@@ -53,7 +53,7 @@ avslutt_pen = turtle.Turtle()
 avslutt_pen.speed(0)
 avslutt_pen.color("red")
 avslutt_pen.penup()
-avslutt_pen.setposition(-30, 0)
+avslutt_pen.setposition(-110, 0)
 avsluttstring = ""
 avslutt_pen.clear()
 avslutt_pen.write(avsluttstring, False, align="left", font=("Arial", 32, "normal"))
@@ -224,7 +224,7 @@ while True:
             fiende.hideturtle()
             avslutt_pen.write("Game over", False, align="left", font=("Arial", 32, "normal"))
             print ("Game Over")
-            break
+            exit()
 
     
 
