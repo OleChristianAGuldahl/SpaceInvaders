@@ -1,7 +1,7 @@
 # SpaceInvaders
 Spillet er bygd på klasikeren Space Invaders. Spilleren er en kanoen på jorda som kan bevege seg frem og til bake med bruk av piltatene. Romvesner kommer på toppen av skjermen og beveger seg nedover. Formålet med spillet er å skyte ned romvesnene før de kommer ned til kanonen. 
 
-Psuedokode:
+## Psuedokode:
 
 Sett opp skjerm
 
