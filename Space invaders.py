@@ -190,7 +190,7 @@ while True:
                 fiende.sety(y)
         # Tester om fienden og skuddet koliderer
         if isCollision(skudd, fiende):
-            playsound('shoot.wav',False)
+            playsound('killed.wav',False)
             # Restarter skuddet
             skudd.hideturtle()
             skuddtilstand = "ready"
