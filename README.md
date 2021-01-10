@@ -29,10 +29,16 @@ Hvis kolisjon mellom fiende og spiller
 
 #Installasjon:
 
-Code -> Download Zip
+Jeg har brukt pip freeze for å lage en requirements fil. Slik at de nødvendige biblioteken blir lastet ned
 
-Pakk ut
+Last ned prosjektet ved å  velge "code" og "download"
 
-pip3 install -r requirements.txt
+Pakk ut filene åpne komandovindu i mappen du pakket filene ut i 
 
-python main.py
+Kjør komandoen 
+
+'pip3 install -r requirements.txt'
+
+Og så 
+
+'python main.py'
