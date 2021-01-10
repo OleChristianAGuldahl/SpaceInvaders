@@ -48,6 +48,18 @@ score_pen.clear()
 score_pen.write(scorestring, False, align="left", font=("Arial", 14, "normal"))
 score_pen.hideturtle()
 
+# Tegner Game over
+avslutt_pen = turtle.Turtle()
+avslutt_pen.speed(0)
+avslutt_pen.color("red")
+avslutt_pen.penup()
+avslutt_pen.setposition(-30, 0)
+avsluttstring = ""
+avslutt_pen.clear()
+avslutt_pen.write(avsluttstring, False, align="left", font=("Arial", 32, "normal"))
+avslutt_pen.hideturtle()
+
+
 # Lager turtle spilleren
 spiller = turtle.Turtle()
 spiller.shape("spiller.gif")
@@ -83,7 +95,7 @@ for fiende in fiender:
     y = random.randint(100, 250)
     fiende.setposition(x, y)
 
-fiendefart = 2
+fiendefart = 8
 
 
 # Spillern sitt våpen
@@ -206,9 +218,11 @@ while True:
             score_pen.write(scorestring, False, align="left", font=("Arial", 14, "normal"))
             
 
+          # Hvis fiende og spiller koliderer "Game over"
         if isCollision(spiller, fiende):
             spiller.hideturtle()
             fiende.hideturtle()
+            avslutt_pen.write("Game over", False, align="left", font=("Arial", 32, "normal"))
             print ("Game Over")
             break
 

@@ -37,7 +37,7 @@ border_pen.hideturtle()
 
 score = 0
 
-#Tegner scoren
+# Tegner scoren
 score_pen = turtle.Turtle()
 score_pen.speed(0)
 score_pen.color("white")
@@ -47,6 +47,17 @@ scorestring = "Score: {}" .format(score)
 score_pen.clear()
 score_pen.write(scorestring, False, align="left", font=("Arial", 14, "normal"))
 score_pen.hideturtle()
+
+# Tegner Game over
+avslutt_pen = turtle.Turtle()
+avslutt_pen.speed(0)
+avslutt_pen.color("red")
+avslutt_pen.penup()
+avslutt_pen.setposition(-10, 0)
+avsluttstring = ""
+avslutt_pen.clear()
+avslutt_pen.write(avsluttstring, False, align="left", font=("Arial", 32, "normal"))
+avslutt_pen.hideturtle()
 
 # Lager turtle spilleren
 spiller = turtle.Turtle()
@@ -208,6 +219,7 @@ while True:
         if isCollision(spiller, fiende):
             spiller.hideturtle()
             fiende.hideturtle()
+            avslutt_pen.write("Game over", False, align="left", font=("Arial", 14, "normal"))
             print ("Game Over")
             break
 
