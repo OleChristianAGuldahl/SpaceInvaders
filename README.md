@@ -28,6 +28,7 @@ Hvis kolisjon mellom fiende og spiller
 -> Game over
 
 # Installasjon:
+For å intallasjonen skal fungere må du ha installert python
 
 Jeg har brukt pip freeze for å lage en requirements fil. Slik at de nødvendige biblioteken blir lastet ned
 
