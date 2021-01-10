@@ -1,13 +1,13 @@
 # SpaceInvaders
-Spillet er bygd på klasikeren Space Invaders. Spilleren er en kanoen på jorda som kan bevege seg frem og til bake med bruk av piltatene. Romvesner kommer på toppen av skjermen og beveger seg nedover. Formålet med spillet er å skyte ned romvesnene før de kommer ned til kanonen. 
+Spillet er bygd på klassikeren Space Invaders. Spilleren er en kanon på jorda som kan bevege seg frem og til bake med bruk av piltatene. Rommvesner kommer på toppen av skjermen og beveger seg nedover. Formålet med spillet er å skyte ned romvesnene med mellomromtasten før de kommer ned til kanonen. 
 
-Psuedokode:
+## Psuedokode:
 
 Sett opp skjerm
 
-sett opp bakgrunn 
+Sett opp bakgrunn 
 
-sett opp spill område
+Sett opp spill område
 
 Sett opp poengtelleren 
 
@@ -27,7 +27,7 @@ Hvis kolisjon mellom fiende og spiller
 
 -> Game over
 
-#Installasjon:
+# Installasjon:
 
 Jeg har brukt pip freeze for å lage en requirements fil. Slik at de nødvendige biblioteken blir lastet ned
 
@@ -37,8 +37,8 @@ Pakk ut filene åpne komandovindu i mappen du pakket filene ut i
 
 Kjør komandoen 
 
-'pip3 install -r requirements.txt'
+`pip3 install -r requirements.txt`
 
 Og så 
 
-'python main.py'
+`python main.py`
